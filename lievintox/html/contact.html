@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Contact</title>
+ <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="dropdownmenu">
+    <div class="logo">
+      <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./evenements.html">Évènements</a>
+          <ul id="submenu">
+            <li><a href="./evenements.html">A venir</a></li>
+            <li><a href="./evenementspasse.html">Passés</a></li>
+          </ul>
+        </li>
+        <li><a href="./articles.html">Articles</a>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav role="navigation" id="nav_burger">
+    <div class="logo">
+      <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+     </div> 
+  
+    <div id="menuToggle">
+      <!--
+      Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Certaines travées agissent comme un burger.
+      
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+      -->
+      <ul id="menu">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./evenements.html">Évènements</a>
+          <ul id="submenu">
+            <li id=""><a href="./evenements.html">À venir</a></li>
+            <li><a href="./evenementspasse.html">Passés</a></li>
+          </ul>
+        </li>
+        <li><a href="./articles.html">Articles</a>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <!-- CAROUSEL -->
+  <div class="carousel">
+
+    <div class="carousel-img slider1">
+    </div>
+    <div class="carousel-img slider2">
+    </div>
+  </div>
+
+  
+  <div class="contactez-nous">
+    <img src="../img/logo.webp" alt="" id="logocontact">
+    <div id="background_white">
+    <strong><h1>Contactez-nous</h1>
+    <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour
+      prendre contact avec nous !</p></strong>
+    <form action="/page-traitement-donnees" method="post">
+      <div>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Michelle Michel" required>
+      </div>
+      <div>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+      </div>
+      <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+          <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+          <option value="probleme-compte">Problème technique avec le site mais c'est bien fait pour vous</option>
+          <option value="question-produit">Boîtes à idées ou pas</option>
+          <option value="suivi-commande">Une intox qui est en fait une vraie info</option>
+          <option value="autre">Autre...</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car je trouve votre site super... ou pas" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Envoyer mon message</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+
+
+  <section class="footer" id="footer_contact">
+    <div class="footer">
+      <div class="widget">
+        <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+          style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+        <iframe id="widget_autocomplete_preview" frameborder="0"
+          src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      <img src="../img/Liévin_logo.png" alt="">
+      <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+    </div>
+  </section>
+</body>
+
+</html>

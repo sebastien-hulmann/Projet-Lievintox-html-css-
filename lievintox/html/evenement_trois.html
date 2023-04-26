@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Call Me Food</title>
+ <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+   <!-- NAV -->
+ <nav class="dropdownmenu">
+    <div class="logo">
+     <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+    </div> 
+   
+    <div class="nav">
+     <ul>
+       <li><a href="./index.html">Accueil</a></li>
+       <li><a href="./evenements.html">Évènements</a>
+         <ul id="submenu">
+           <li><a href="./evenements.html">A venir</a></li>
+           <li><a href="./evenementspasse.html">Passés</a></li>
+         </ul>
+       </li>
+       <li><a href="./articles.html">Articles</a>
+       </li>
+       <li><a href="./contact.html">Contact</a></li>
+     </ul>
+    </div>
+   </nav>
+  
+
+   <nav role="navigation" id="nav_burger">
+    <div class="logo">
+      <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+     </div> 
+  
+    <div id="menuToggle">
+      <!--
+      Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Certaines travées agissent comme un burger.
+      
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+      -->
+      <ul id="menu">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./evenements.html">Évènements</a>
+          <ul id="submenu">
+            <li id=""><a href="./evenements.html">À venir</a></li>
+            <li><a href="./evenementspasse.html">Passés</a></li>
+          </ul>
+        </li>
+        <li><a href="./articles.html">Articles</a>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- CAROUSEL -->
+    <div class="carousel">
+        <img src="../img/logo.webp" alt="" id="logo">
+        <div class="carousel-img slider1">
+        </div>
+        <div class="carousel-img slider2">
+        </div>
+    </div>
+
+    <section class="container_event_un">
+        <div class="event_un">
+            <h1>CALL ME FOOD</h1>
+            <P id="titre">
+                Publié il y a 20 heures
+            </P>
+            <p >Call me food ? Kézaco.</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JHHodfq6rD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p id="text_vdeo_ytb">Une première dans le Bassin Minier...Un bâtiment entièrement dédié à la restauration....avec terrasse et rooftop... inspiré des lieux visités a Paris, Rotterdam ou encore Bruxelles...Une offre de restauration différente, innovante...ouverts à tous ceux ayant un projet de création ou de développement de leur concept...Bornes digitales, programmation événementielle...ce nouveau concept fera tout pour vous offrir un service innovant.</p>
+
+            <Article>
+                <img src="../img/visuhallegourmande.webp" alt="">
+                <p class="article_event">
+                  "Le concept est simple : c'est un espace restauration entouré de différents stands autour de la cuisine, comme plusieurs food truck par exemple, explique Laurent Duporge, le Maire. <br><br> Ce qui est fou, c'est que les promoteurs voulaient absolument venir chez nous, alors qu'ils sont plutôt habitués à développer ce type d'enseigne à Bruxelles, Lille ou Paris".
+                </p>
+                <div class="clear"></div>
+            </Article>
+
+            <p>Sur plus de 1000m2 dédiés à la restauration, nous y trouverons des stands de cuisine, un bar, des restaurants...et même un rooftop : un toit ouvert à la clientèle.</p>
+                <span></span>
+        <a href=""></a>
+        <a href="../img/pdf.pdf" download="../img/pdf.pdf" id="download" target="_blank">Télécharger le PDF</a>
+        </div>
+
+    </section>
+
+   <!-- FOOTER -->
+   <section class="footer">
+    <div class="footer">
+      <div class="widget">
+        <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+          style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+        <iframe id="widget_autocomplete_preview" frameborder="0"
+          src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      <img src="../img/Liévin_logo.png" alt="">
+      <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Evènements à venir</title>
+ <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- NAV -->
+ <nav class="dropdownmenu">
+  <div class="logo">
+   <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+  </div> 
+ 
+  <div class="nav">
+   <ul>
+     <li><a href="./index.html">Accueil</a></li>
+     <li><a href="./evenements.html">Évènements</a>
+       <ul id="submenu">
+         <li><a href="./evenements.html">A venir</a></li>
+         <li><a href="./evenementspasse.html">Passés</a></li>
+       </ul>
+     </li>
+     <li><a href="./articles.html">Articles</a>
+     </li>
+     <li><a href="./contact.html">Contact</a></li>
+   </ul>
+  </div>
+ </nav>
+
+ <nav role="navigation" id="nav_burger">
+  <div class="logo">
+    <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+   </div> 
+
+  <div id="menuToggle">
+    <!--
+    Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Certaines travées agissent comme un burger.
+    
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+    -->
+    <ul id="menu">
+      <li><a href="./index.html">Accueil</a></li>
+      <li><a href="./evenements.html">Évènements</a>
+        <ul id="submenu">
+          <li id=""><a href="./evenements.html">À venir</a></li>
+          <li><a href="./evenementspasse.html">Passés</a></li>
+        </ul>
+      </li>
+      <li><a href="./articles.html">Articles</a>
+      </li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+   
+       <!-- CAROUSEL -->
+       <div class="carousel">
+         <img src="../img/logo.webp" alt="" id="logo">
+           <div class="carousel-img slider1">
+           </div>
+           <div class="carousel-img slider2">
+             </div>
+       </div>
+
+        <div class="grille-evenements">       
+           <h1>évènements à venir</h1>
+           <p>Retrouvez la liste des évènemments prévus dans la ville de Liévin !</p>
+
+           <div class="evenement">
+                <img src="../img/aquacarnaval.webp " alt="soirée carnaval" >
+                <div class="margeven">
+                    <h2>Soirée Aqua carnaval</h2>
+                    <p id="paragraphe">                      
+                      Le thème de la prochaine soirée ? CARNAVALLLLL <br>
+                       A partir du <strong> 8 Février 2023 à 19h30</strong>
+                        pour les soirées Aqua que vous attendez tant ! <br> <br>
+                      Entrée au prix de 8€ avec buffet et boissons offertes. 
+                      Attention, il est nécessaire de réserver à l'accueil de notre centre
+                       pour être sûr d'avoir votre place. <br><br>
+                      Plus d'informations par téléphone au 03.21.44.69.56 ou par message privé. </p>
+                    <a href="./evenement_un.html" class="voirplus">Voir plus ></a>
+                </div>
+           </div>
+
+           <div class="evenement2"> 
+            <img src="../img/randogohelle.webp" alt="" id="image_even2">          
+            <div class="margeven2">
+                <h2>Rando de la Gohelle</h2>
+                <p id="paragraphe">Chers amis randonneurs, Nous sommes ravis de vous annoncer
+                   la 48ème édition de la Randonnée de la Gohelle qui aura lieu le <strong>
+                     Dimanche 2 avril 2023</strong>.<br> <br>Cet événement annuel est l'occasion
+                      idéale pour se connecter avec la nature et explorer les magnifiques
+                      paysages du territoire.<br><br>
+                  Les participants choisissent parmi 4 parcours de difficulté différents,
+                   adaptés aux débutants ainsi qu'aux randonneurs expérimentés, 
+                   allant de 5 à 20km. </p>
+                <a href="./evenement_deux.html" class="voirplus">Voir plus ></a>
+            </div>
+        </div>
+
+            <div class="evenement">
+                <img src="../img/call-me-food.webp" alt="" >
+                <div class="margeven">
+                    <h2>Call Me Food</h2>
+                    <p id="paragraphe">Call Me Food, c’est un espace ouvert dédié aux stands
+                       de restauration positionnés autour d’un bar central. <br> <br> 
+                       « On retrouve souvent ce genre de concept dans les grandes villes
+                        comme Paris, Bruxelles, Rotterdam, ou encore Lisbonne. <br> <br>
+                         Nous pouvons être fiers d’accueillir un lieu comme celui-là »,
+                          précide Laurent Duporge. Une offre de restauration différente,
+                           innovante, ouverte à tous ceux qui ont un projet de création
+                            ou de développement de leur concept.</p>
+                    <a href="./evenement_trois.html" class="voirplus">Voir plus ></a>
+                </div>
+           </div>
+       </div>
+
+ <!-- FOOTER -->
+ <section class="footer">
+  <div class="footer">
+    <div class="widget">
+      <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+        style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+      <iframe id="widget_autocomplete_preview" frameborder="0"
+        src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+    </div>
+  </div>
+  <div class="copyright">
+    <img src="../img/Liévin_logo.png" alt="">
+    <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+  </div>
+</section>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+        

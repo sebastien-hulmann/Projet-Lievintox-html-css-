@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Articles</title>
+ <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="css/fontawesome-free-5.1.0-web/css/all.css" type="text/css" media="screen">
+</head>
+
+<body>
+    <!------ NAV ------>
+ <nav class="dropdownmenu">
+    <div class="logo">
+     <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+    </div> 
+   
+    <div class="nav">
+     <ul>
+       <li><a href="./index.html">Accueil</a></li>
+       <li><a href="./evenements.html">Évènements</a>
+         <ul id="submenu">
+           <li><a href="./evenements.html">A venir</a></li>
+           <li><a href="./evenementspasse.html">Passés</a></li>
+         </ul>
+       </li>
+       <li><a href="./articles.html">Articles</a>
+       </li>
+       <li><a href="./contact.html">Contact</a></li>
+     </ul>
+    </div>
+   </nav>
+
+
+   <nav role="navigation" id="nav_burger">
+    <div class="logo">
+      <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+     </div> 
+  
+    <div id="menuToggle">
+      <!--
+      Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Certaines travées agissent comme un burger.
+      
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+      -->
+      <ul id="menu">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./evenements.html">Évènements</a>
+          <ul id="submenu">
+            <li id=""><a href="./evenements.html">À venir</a></li>
+            <li><a href="./evenementspasse.html">Passés</a></li>
+          </ul>
+        </li>
+        <li><a href="./articles.html">Articles</a>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+   
+    <!----- CAROUSEL ----->
+       <div class="carousel">
+         <img src="../img/logo.webp" alt="" id="logo">
+           <div class="carousel-img slider1">
+           </div>
+           <div class="carousel-img slider2">
+             </div>
+       </div>
+
+    <!----- PAGE ----->
+<div class="actu_article">
+    <div class="center_articles">
+    <h1 class="titrepage">Articles & Actus</h1>
+    <P id="titre_article_actu">Retrouvez ici les actualités de la ville de Liévin</P>
+    <div class="page">
+                <div class="colonne1">
+            <div class="article">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                       <div class="flip-card-front">
+                            <img src="../img/italian-trattoria.jpg" alt="Italian Trattoria" id="image_article"  >
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="textarticle">Ce n’est plus qu’une question d’heures avant que le restaurant
+                                 Italian Trattoria n’ouvre ses portes dans la zone commerciale de Liévin <br>
+                                  La nouvelle enseigne, très présente dans le Nord – Pas-de-Calais,
+                                   va tenter de conquérir le Bassin minier. <br><br> On connait la date d’ouverture! <br> <br>
+
+                                Des produits frais, 100% italiens. <br>
+                                </p>
+                        </div>
+                </div>
+                </div>
+                <div class="titre-article">
+                    <h1>Nouveau Restaurant</h1>
+                    <p>Publié il y a 15 heures</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                           <img src="../img/ssport.jpg" alt="Meeting" id="image_article">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="textarticle">Le premier Meeting international à Liévin a vu le jour en 1988, deux ans après la construction de l'Arena Stade Couvert de Liévin, reconnu pour être la plus grande et la plus moderne  salle en Europe.
+                                L'expansion géographique du tour sur le plan mondial intègre désormais de nouveaux niveaux de compétitions continentales. De 7 meetings en 2020, le World Indoor Tour a pu proposer 24 meetings en 2021, 33 en 2022 et maintenant 54 pour l’année à venir. <br>
+                                
+                                </p>
+                        </div>
+                 </div>
+                </div>
+                <div class="titre-article">
+                    <h1>Meeting </h1>
+                    <p>Publié il y a 15 heures</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../img/ouvrier-electrise.jpg" alt="Accident" id="image_article">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="textarticle">Plus de peur, que de mal, mais les dégâts restent spectaculaires. <br> À Liévin (Pas-de-Calais), le conducteur d’une voiture a percuté la façade d’une maison dans la nuit du dimanche 23 octobre. <br>
+                                            
+                                                        
+                            Il était environ 2 h quand les pompiers ont été appelés : si le jeune chauffeur, âgé de 24 ans, n’a pas été blessé, un mur de l’habitation a quant à lui été détruit sous le choc, laissant un trou béant sur l’intérieur d’une des pièces.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="titre-article">
+                    <h1>Accident</h1>
+                    <p>Publié il y a 15 heures</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="colonne2">
+            <div class="article">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                       <div class="flip-card-front">
+                            <img src="../img/bistronomique.webp" alt="Club bistronomique" id="image_article" >
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="textarticle">C’est un ovni dans le paysage gastronomique, une alliance improbable, de celles qu’on trouve parfois dans les grandes assiettes. <br><br>
+                                 Dans la concession Volvo, en bordure du CD58 à Liévin, on n’imagine pas pouvoir se régaler avec autre chose que des carrosseries rutilantes (pour les amateurs). <br><br>
+                                  Une adresse pour les gourmets se cache pourtant dans ces lieux  : Le Club bistronomique.</p>
+                        </div>
+                </div>
+                </div>
+                <div class="titre-article">
+                    <h1>Club bistronomique</h1>
+                    <p>Publié il y a 15 heures</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                           <img src="../img/salondulivre.jpg" alt="Salon du livre" id="image_article">
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="textarticle">Pour l’occasion de nombreuses festivités pour tous les amateurs de livres, les petits comme les grands ! <br>
+
+                                Soyez curieux ou curieuses et partez à la découverte des libraires venus de toute la région et même de Belgique, des bouquinistes, des auteurs, des dessinateurs et des éditeurs régionaux. <br>
+                                
+                                En plus des spectacles et toute la journée, la Cie Lutka anime des ateliers fabrication et manipulation de marionnettes. </p>
+                        </div>
+                 </div>
+                </div>
+                <div class="titre-article">
+                    <h1>Salon du livre </h1>
+                    <p>Publié il y a 15 heures</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../img/call-me-food.webp" alt="Halle gourmande" id="image_article">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="textarticle">Call me food ? Kézaco. <br><br> Une première dans le Bassin Minier...Un bâtiment entièrement dédié à la restauration....avec terrasse et rooftop... inspiré des lieux visités a Paris, Rotterdam ou encore Bruxelles... <br><br> Une offre de restauration différente, innovante...ouverts à tous ceux ayant un projet de création ou de développement de leur concept...</p>
+                    </div>
+                </div>
+                </div>
+                <div class="titre-article">
+                    <h1>Halle gourmande</h1>
+                    <p>Publié il y a 15 heures</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="clear"></div>
+    </div>
+
+    
+     <!-- FOOTER -->
+     <section class="footer">
+      <div class="footer">
+        <div class="widget">
+          <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+            style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+          <iframe id="widget_autocomplete_preview" frameborder="0"
+            src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+        </div>
+      </div>
+      <div class="copyright">
+        <img src="../img/Liévin_logo.png" alt="">
+        <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+      </div>
+    </section>
+</body>
+
+</html>

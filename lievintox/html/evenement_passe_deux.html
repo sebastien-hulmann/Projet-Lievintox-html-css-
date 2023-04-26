@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Halloween Run</title>
+ <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- NAV -->
+ <nav class="dropdownmenu">
+    <div class="logo">
+     <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+    </div> 
+   
+    <div class="nav">
+     <ul>
+       <li><a href="./index.html">Accueil</a></li>
+       <li><a href="./evenements.html">Évènements</a>
+         <ul id="submenu">
+           <li><a href="./evenements.html">A venir</a></li>
+           <li><a href="./evenementspasse.html">Passés</a></li>
+         </ul>
+       </li>
+       <li><a href="./articles.html">Articles</a>
+       </li>
+       <li><a href="./contact.html">Contact</a></li>
+     </ul>
+    </div>
+   </nav>
+
+   <nav role="navigation" id="nav_burger">
+    <div class="logo">
+      <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+     </div> 
+  
+    <div id="menuToggle">
+      <!--
+      Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Certaines travées agissent comme un burger.
+      
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+      -->
+      <ul id="menu">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./evenements.html">Évènements</a>
+          <ul id="submenu">
+            <li id=""><a href="./evenements.html">À venir</a></li>
+            <li><a href="./evenementspasse.html">Passés</a></li>
+          </ul>
+        </li>
+        <li><a href="./articles.html">Articles</a>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+    <!-- CAROUSEL -->
+    <div class="carousel">
+        <img src="../img/logo.webp" alt="" id="logo">
+        <div class="carousel-img slider1">
+        </div>
+        <div class="carousel-img slider2">
+        </div>
+    </div>
+
+    <section class="container_event_un">
+        <div class="event_un">
+            <h1>HALLOWEEN RUN</h1>
+            <P id="titre">
+                Publié il y a 20 heures
+            </P>
+            <p >Pour sa deuxième édition, Halloween Run revient à Liévin le vendredi 28 octobre pour encore plus de frissons.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/unEwW9vMT-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p id="text_vdeo_ytb">Victime de son succès l’année dernière, c’est sous une autre formule et agrémentée de nouvelles animations que la ville de Liévin vous propose de vivre une fête d’Halloween horriblement sympa...</p>
+
+            <Article>
+                <img src="../img/visuhalloweenrun.webp" alt="">
+                <p class="article_event">
+                    C’est toujours au Parc de Rollencourt que l’esprit d’Halloween raisonnera à Liévin. <br><br>
+                    Plusieurs « zones de la peur » seront établies pour fluidifier l’accès et permettre à chacun de profiter des festivités. Pour les grands comme pour les petits, un village d’Halloween habillera le parking du chalet Brand. <br><br> Village fantômes, échassiers, cracheurs de feu, arbres lumineux… C’est dans cette ambiance que les visiteurs pourront se diriger vers deux parcours créés dans le sous-bois. <br>
+                    
+                </p>
+                <div class="clear"></div>
+            </Article>
+
+            <p>Pour permettre à chacun de vivre pleinement l’événement, la ville de Liévin met en place des inscriptions pour y accéder. <br> Une fois inscrit, vous allez recevoir un email de confirmation avec votre numéro de réservation. Vous pouvez ensuite venir retirer vos bracelets au service des sports, 45 rue Edouard Vaillant du lundi au vendredi de 8h à 12h et de 13h30 à 18h</p>
+                <span></span>
+        <a href=""></a>
+        <a href="../img/pdf.pdf" download="../img/pdf.pdf" id="download" target="_blank">Télécharger le PDF</a>
+        </div>
+
+    </section>
+
+ <!-- FOOTER -->
+ <section class="footer">
+  <div class="footer">
+    <div class="widget">
+      <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+        style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+      <iframe id="widget_autocomplete_preview" frameborder="0"
+        src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+    </div>
+  </div>
+  <div class="copyright">
+    <img src="../img/Liévin_logo.png" alt="">
+    <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+  </div>
+</section>
+</body>
+
+</html>

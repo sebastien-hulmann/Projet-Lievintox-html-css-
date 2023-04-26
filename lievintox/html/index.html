@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Accueil</title>
+  <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+ <!-- NAV -->
+ <nav class="dropdownmenu">
+  <div class="logo">
+   <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+  </div> 
+ 
+  <div class="nav">
+   <ul>
+     <li><a href="./index.html">Accueil</a></li>
+     <li><a href="./evenements.html">Évènements</a>
+       <ul id="submenu">
+         <li><a href="./evenements.html">A venir</a></li>
+         <li><a href="./evenementspasse.html">Passés</a></li>
+       </ul>
+     </li>
+     <li><a href="./articles.html">Articles</a>
+     </li>
+     <li><a href="./contact.html">Contact</a></li>
+   </ul>
+ </div>
+ </nav>
+
+ <nav role="navigation" id="nav_burger">
+  <div class="logo">
+    <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+   </div> 
+
+  <div id="menuToggle">
+    <!--
+    Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Certaines travées agissent comme un burger.
+    
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+    -->
+    <ul id="menu">
+      <li><a href="./index.html">Accueil</a></li>
+      <li><a href="./evenements.html">Evènements</a>
+        <ul id="submenu">
+          <li id=""><a href="./evenements.html">À venir</a></li>
+          <li><a href="./evenementspasse.html">Passés</a></li>
+        </ul>
+      </li>
+      <li><a href="./articles.html">Articles</a>
+      </li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- CAROUSEL -->
+  <div class="carousel">
+    <img src="../img/logo.webp" alt="" id="logo">
+    <div class="carousel-img slider1">
+    </div>
+    <div class="carousel-img slider2">
+    </div>
+  </div>
+
+
+  <!-- EVENEMENTS -->
+  <div class="container_event">
+    <h1>ÉVÈNEMENTS</h1>
+    <p>Retrouvez les évènements passés et les évènements à venir de la ville de Liévin !</p>
+    <div class="article_event">
+    <article class="a_venir">
+      <img src="../img/aquacarnaval.webp" alt="">
+      <h2>Soirée Aqua carnaval</h2>
+      <p>Le thème de la prochaine soirée ? CARNAVALLLLL <br>
+         On se retrouve ce <strong> 8 Février 2023 à 19h30</strong>
+          pour la soirée Aqua que vous attendez tant. <br>
+       </p>
+        <a href="./evenement_un.html">Voir plus > </a>
+    </article>
+    <article class="a_venir">
+      <img src="../img//randogohelle.webp" alt="" id="middle">
+      <h2>Rando de la Gohelle</h2>
+      <p>Chers amis randonneurs, Nous sommes ravis de vous annoncer
+        la 48ème édition de la Randonnée de la Gohelle qui aura lieu le <strong>
+          Dimanche 2 avril 2023</strong>. <br></p>
+        <a href="./evenement_deux.html">Voir plus > </a>
+    </article>
+    <article class="a_venir" id="last">
+      <img src="../img/call-me-food.webp" alt="">
+      <h2>Call Me Food</h2>
+      <p>Call Me Food, c’est un espace ouvert dédié aux stands
+        de restauration positionnés autour d’un bar central que l'on retrouve dans les plus grandes villes.  <br> 
+        </p>
+        <a href="./evenement_trois.html">Voir plus > </a>
+    </article>
+    <article class="event_passe">
+      <img src="../img/villagedenoel.webp" alt="">
+      <h2>Village de Noël</h2>
+      <p>Après deux ans d’absence à cause de la crise
+        sanitaire, les festivités de Noël font leur grand retour à
+        Liévin .<br> Et pour cette nouvelle édition des festivités
+        de Noël, la ville de Liévin a décidé de déplacer les
+        animations de la Place Gambetta au parvis de l’Hôtel de
+        ville.Du 19 au 23 décembre de 14h à 19h, c’est le
+        p’tit village du Père Noël qui viendra s’y installer.</p>
+        
+        <a href="./evenement_passe_un.html">Voir plus > </a>
+    </article>
+  </div>
+    <span></span>
+  </div>
+
+<!-- ARTICLES & ACTU -->
+  <div class="container_article_actu">
+    <article id="actujour">
+      <h2>ACTU DU JOUR </h2>
+      <p id="titre_actu">Publié il y a 2 heures</p>
+      <h3>Les frites MCDO guérissent la calvitie ? BURGER KING s'inquiète..</h3>
+      <P>Comme le rappelle le site spécialisé Futurism, des scientifiques japonais 
+        ont effectivement publié une étude dans la revue Biomaterials dans laquelle
+         ils évoquent un composé chimique, le dimethylpolysiloxane. <br>
+        Son rôle ? Empêcher l’huile de friture de mousser.
+         Mais ce produit pourrait avoir une autre utilité... 
+         notamment contre la calvitie.       
+        </p>
+      <img src="../img/frites-calvitie.webp" alt="">
+      <P>Les frites de McDonalds, "remède miracle signé Ronald McDonald's",
+         soigneraient la calvitie et feraient repousser les cheveux.
+          C'est en tout cas ce que des médias anglophones -Newsweek,
+           Express UK- ont relayé, avant d'être repris par des médias français
+            - le Huffpost, Terrafemina entre autres-, tout en usant parfois du 
+            conditionnel. L'information viendrait, selon eux, d'une étude 
+            scientifique publiée dans la revue Biomaterials. </p>
+        <a href="../img/pdf.pdf"  id="download" target="_bkank">Télécharger le PDF</a>
+    </article>
+    <h1>ARTICLES & ACTUS</h1>
+    <p>Retrouvez ici les actualités de la ville de Liévin !</p>
+    <div class="double_article_actu">
+    <article class="article_actu">
+      <img src="../img/restoitalian.webp" alt="">
+      <h2>Italian Trattoria</h2>
+      <p>Italian Trattoria n’ouvre ses portes dans la zone commerciale de Liévin. <br>
+        La nouvelle enseigne, très présente dans le Nord – Pas-de-Calais,
+         va tenter de conquérir le Bassin minier. Ce nouvel établissement, situé juste à côté du bowling flambant neuf, ouvrira ce jeudi 2 février 2023. <br>
+
+      Des produits frais, 100% italiens. <br></p>
+        <a href="./articles.html">Voir plus > </a>
+    </article>
+    <article class="article_actu">
+      <img src="../img/bistronomique.webp" alt="">
+      <h2>Club bistronomique</h2>
+      <p>Dans la concession Volvo, en bordure du CD58 à Liévin, on n’imagine pas pouvoir se régaler avec autre chose que des carrosseries rutilantes (pour les amateurs). <br><br>
+         Une adresse pour les gourmets se cache pourtant dans ces lieux  : Le Club bistronomique, en témoigne le logo du Gault & Millau fraîchement apposé sur la porte vitrée.</p>
+        <a href="./articles.html">Voir plus > </a>
+    </article>
+  </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer">
+      <div class="widget">
+        <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+          style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+        <iframe id="widget_autocomplete_preview" frameborder="0"
+          src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      <img src="../img/Liévin_logo.png" alt="">
+      <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+    </div>
+  </section>
+</body>
+
+</html>

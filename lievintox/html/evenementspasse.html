@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Le Liév'intox - Evènements passés</title>
+ <link rel="shortcut icon" type="image/png" href="../img/Liévin_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- NAV -->
+ <nav class="dropdownmenu">
+  <div class="logo">
+   <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+  </div> 
+ 
+  <div class="nav">
+   <ul>
+     <li><a href="./index.html">Accueil</a></li>
+     <li><a href="./evenements.html">Évènements</a>
+       <ul id="submenu">
+         <li><a href="./evenements.html">A venir</a></li>
+         <li><a href="./evenementspasse.html">Passés</a></li>
+       </ul>
+     </li>
+     <li><a href="./articles.html">Articles</a>
+     </li>
+     <li><a href="./contact.html">Contact</a></li>
+   </ul>
+  </div>
+ </nav>
+
+ <nav role="navigation" id="nav_burger">
+  <div class="logo">
+    <a href="index.html"><img src="../img/Liévin_logo.png" alt="Logo"></a>
+   </div> 
+
+  <div id="menuToggle">
+    <!--
+    Une fausse case à cocher / masquée est utilisée comme récepteur de clic, vous pouvez donc utiliser le sélecteur :checked dessus.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Certaines travées agissent comme un burger.
+    
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Dommage que le menu doive être à l'intérieur du bouton mais bon, c'est de la pure magie CSS.
+    -->
+    <ul id="menu">
+      <li><a href="./index.html">Accueil</a></li>
+      <li><a href="./evenements.html">Évènements</a>
+        <ul id="submenu">
+          <li id=""><a href="./evenements.html">À venir</a></li>
+          <li><a href="./evenementspasse.html">Passés</a></li>
+        </ul>
+      </li>
+      <li><a href="./articles.html">Articles</a>
+      </li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+   
+       <!-- CAROUSEL -->
+       <div class="carousel">
+         <img src="../img/logo.webp" alt="" id="logo">
+           <div class="carousel-img slider1">
+           </div>
+           <div class="carousel-img slider2">
+             </div>
+       </div>
+
+       <div class="grille-evenements">       
+        <h1>Évènements passéS</h1>
+        <p>Retrouvez la liste des meilleurs évènemments qui ont eu lieu dans la ville de Liévin !</p>
+
+        <div class="evenement">
+             <img src="../img/villagedenoel.webp" alt="" >
+             <div class="margeven">
+                 <h2>Village de Noël</h2>
+                 <p id="paragraphe">Après deux ans d’absence à cause de la crise
+                  sanitaire, les festivités de Noël font leur grand retour à
+                  Liévin .<br> Et pour cette nouvelle édition des festivités
+                  de Noël, la ville de Liévin a décidé de déplacer les
+                  animations de la Place Gambetta au parvis de l’Hôtel de
+                  ville. <br> Du 19 au 23 décembre de 14h à 19h, c’est le
+                  p’tit village du Père Noël qui viendra s’y installer,
+                  pour le plus grand bonheur des enfants.
+                  <br>Rendez-vous le 23 décembre à 18h pour la soirée de clôture
+                  du Village du Père Noël, avec la descente du Père Noël sur
+                   le beffroi de notre Hôtel de Ville</p>
+                 <a href="./evenement_passe_un.html" class="voirplus">Voir plus ></a>
+             </div>
+        </div>
+
+        <div class="evenement2">   
+          <img src="../img/hallowwenrun.webp" alt="" id="image_even2">        
+         <div class="margeven2">
+          
+             <h2>Halloween Run</h2>
+             <p id="paragraphe">C’est toujours au Parc de Rollencourt que l’esprit d’Halloween raisonnera à Liévin. <br> « La tradition d’Halloween se développe depuis quelques années. On a senti l’engouement des Liévinois l’année dernière pour la première édition, plusieurs milliers de personnes avait répondu présents. », précise Henri Jackowski, adjoint au Sport. <br> <br> Inscrivez-vous pour participer
+
+              Pour permettre à chacun de vivre pleinement l’événement, la ville de Liévin met en place des inscriptions pour y accéder. </p>
+             <a href="./evenement_passe_deux.html" class="voirplus">Voir plus ></a>
+         </div>
+     </div>
+            
+       </div>
+     <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer">
+      <div class="widget">
+        <iframe src="https://calendar.google.com/calendar/embed?src=albeefrps4%40gmail.com&ctz=Europe%2FParis"
+          style="border: 0" frameborder="0" scrolling="no" id="calendar"></iframe>
+        <iframe id="widget_autocomplete_preview" frameborder="0"
+          src="https://meteofrance.com/widget/prevision/625100"> </iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      <img src="../img/Liévin_logo.png" alt="">
+      <p>Développé par Liév’intox ©Copyright 2023 - <a href="../html/mentions.html">Mentions légales</a></p>
+    </div>
+  </section>
+</body>
+
+</html>
